@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: ABCPaymentService
+  profiles: CLOUD
+
+eureka:
+  client:
+    registerWithEureka: true
+    fetchRegistry: true
+    region: default
+    serviceUrl:
+       defaultZone: http://localhost:3000/eureka
+
+---
